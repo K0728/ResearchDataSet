@@ -1,0 +1,4 @@
+scenario,eps,min_samples,dataset_rows,samples_transmitted,data_reduction_percent,median_filter_runtime_seconds,anomaly_precision,anomaly_recall,anomaly_f1,computation_energy_j_estimate,communication_energy_j_estimate,total_energy_j_estimate,saving_vs_full_transmission_percent_estimate,processing_power_w_assumed,power_is_measured,saving_vs_fixed_dbscan_percent_estimate
+Full transmission,,,5029,5029,0.0,0.0,,,,0.0,30580.0,30580.0,0.0,1.5,False,-5425.335072660783
+Fixed DBSCAN,0.12,10.0,5029,91,98.19049512825612,0.06933879999996861,0.6373626373626373,1.0,0.7785234899328859,0.10400819999995292,553.3465897792802,553.4505979792801,98.19015500987808,1.5,False,0.0
+Optimized DBSCAN,0.5,30.0,5029,56,98.8864585404653,0.2353072499972768,1.0,0.9655172413793104,0.9824561403508771,0.3529608749959152,340.52097832571087,340.8739392007068,98.88530431916053,1.5,False,38.40932859314242

@@ -1,0 +1,44 @@
+{
+  "dataset": "Anomaly_Detection.xlsx",
+  "rows_used": 5029,
+  "configurations_tested": 84,
+  "minimum_anomaly_recall": 0.95,
+  "baseline_eps_0.12_min_samples_10": {
+    "eps": 0.12,
+    "min_samples": 10.0,
+    "selected_samples": 91.0,
+    "data_reduction_percent": 98.19049512825612,
+    "anomaly_precision": 0.6373626373626373,
+    "anomaly_recall": 1.0,
+    "anomaly_f1": 0.7785234899328859,
+    "runtime_seconds": 0.05004614999779733,
+    "computation_energy_j_estimate": 0.075069224996696,
+    "communication_energy_j_estimate": 553.3465897792802,
+    "total_energy_j_estimate": 553.4216590042769,
+    "estimated_energy_saving_percent": 98.1902496435439
+  },
+  "best_eligible_configuration": {
+    "eps": 0.5,
+    "min_samples": 30.0,
+    "selected_samples": 56.0,
+    "data_reduction_percent": 98.8864585404653,
+    "anomaly_precision": 1.0,
+    "anomaly_recall": 0.9655172413793104,
+    "anomaly_f1": 0.9824561403508771,
+    "runtime_seconds": 0.21237775000190595,
+    "computation_energy_j_estimate": 0.3185666250028589,
+    "communication_energy_j_estimate": 340.52097832571087,
+    "total_energy_j_estimate": 340.83954495071373,
+    "estimated_energy_saving_percent": 98.8854167921821
+  },
+  "selection_message": "Best tested configuration meeting recall constraint.",
+  "energy_assumptions": {
+    "full_transmission_reference_j": 30580.0,
+    "processing_power_w": 1.5,
+    "idle_power_w": 0.0,
+    "power_measured": false,
+    "communication_model": "Full-transmission reference scaled linearly by sample count.",
+    "computation_model": "(processing power - idle power) * median runtime",
+    "limitation": "Estimated energy only; no hardware measurement or packet-level radio model."
+  }
+}

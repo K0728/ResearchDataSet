@@ -1,0 +1,3 @@
+scenario,samples_transmitted,data_reduction_percent,computation_energy_j,communication_energy_j_estimate,total_energy_j_estimate
+Full transmission (no DBSCAN),5029,0.0,0.0,30580.0,30580.0
+DBSCAN selective transmission,91,98.19049512825612,0.10433047499827808,553.3465897792802,553.4509202542785

@@ -1,0 +1,69 @@
+{
+  "dataset_file": "Anomaly_Detection.xlsx",
+  "original_rows_in_file": 5029,
+  "rows_used": 5029,
+  "signal_column": "Z_HPF",
+  "ground_truth_column": "Anomali_Flagi",
+  "eps": 0.12,
+  "min_samples": 10,
+  "runtime_repeats": 10,
+  "median_dbscan_runtime_seconds": 0.06955364999885205,
+  "normal_ground_truth": 4971,
+  "anomaly_ground_truth": 58,
+  "selected_for_transmission": 91,
+  "data_reduction_percent": 98.19049512825612,
+  "confusion_matrix_order": [
+    "normal",
+    "anomaly"
+  ],
+  "confusion_matrix": [
+    [
+      4938,
+      33
+    ],
+    [
+      0,
+      58
+    ]
+  ],
+  "classification_report": {
+    "normal": {
+      "precision": 1.0,
+      "recall": 0.9933614966807484,
+      "f1-score": 0.9966696942173782,
+      "support": 4971.0
+    },
+    "anomaly": {
+      "precision": 0.6373626373626373,
+      "recall": 1.0,
+      "f1-score": 0.7785234899328859,
+      "support": 58.0
+    },
+    "accuracy": 0.9934380592563133,
+    "macro avg": {
+      "precision": 0.8186813186813187,
+      "recall": 0.9966807483403741,
+      "f1-score": 0.8875965920751321,
+      "support": 5029.0
+    },
+    "weighted avg": {
+      "precision": 0.9958176641413865,
+      "recall": 0.9934380592563133,
+      "f1-score": 0.9941537904893009,
+      "support": 5029.0
+    }
+  },
+  "energy_model": {
+    "full_transmission_reference_j": 30580.0,
+    "communication_energy_per_observation_estimate_j": 6.080731755816266,
+    "selective_communication_energy_estimate_j": 553.3465897792802,
+    "processing_power_w": 1.5,
+    "processing_power_is_measured": false,
+    "computation_energy_estimate_j": 0.10433047499827808,
+    "full_transmission_total_energy_estimate_j": 30580.0,
+    "selective_total_energy_estimate_j": 553.4509202542785,
+    "estimated_energy_saved_j": 30026.54907974572,
+    "estimated_total_energy_saving_percent": 98.190153956003,
+    "warning": "Communication energy is scaled by sample count from the paper reference. Computation energy is runtime \u00d7 configured power. Estimates only; not hardware validation."
+  }
+}

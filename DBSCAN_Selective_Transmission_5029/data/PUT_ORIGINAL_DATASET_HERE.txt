@@ -1,0 +1,1 @@
+Copy your original Anomaly_Detection.xlsx into this folder. Do not use a synthetic dataset.
